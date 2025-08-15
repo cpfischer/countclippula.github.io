@@ -4,8 +4,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links');
     
     if (menuToggle && navLinks) {
-        menuToggle.addEventListener('click', function() {
+        menuToggle.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
             navLinks.classList.toggle('show');
+            console.log('Menu toggle clicked');
+            
+            // Force repaint to ensure menu displays
+            setTimeout(() => {
+                document.body.style.zoom = '99.99%';
+                setTimeout(() => {
+                    document.body.style.zoom = '100%';
+                }, 10);
+            }, 5);
         });
     }
     
@@ -15,6 +26,16 @@ document.addEventListener('DOMContentLoaded', function() {
             !event.target.closest('nav')) {
             navLinks.classList.remove('show');
         }
+    });
+    
+    // Close mobile menu when clicking on a nav link
+    const navItems = document.querySelectorAll('.nav-links a');
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            if (navLinks.classList.contains('show')) {
+                navLinks.classList.remove('show');
+            }
+        });
     });
     
     // Form validation enhancement
