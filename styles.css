@@ -176,14 +176,13 @@ header {
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 3px solid var(--primary-color);
     overflow: hidden;
-    position: relative;
 }
 
 /* Add decorative elements to header */
@@ -1255,6 +1254,11 @@ footer {
         font-size: 2rem;
     }
     
+    /* Hide floating icons on mobile */
+    .floating-elements {
+        display: none;
+    }
+    
     .feature-card, .testimonial, .service-option {
         min-width: 100%;
     }
@@ -1536,7 +1540,7 @@ select:focus-visible, textarea:focus-visible {
     left: 0;
     width: 100%;
     height: 20px;
-    background-image: url('https://placehold.co/200x20/222/444?text=Gothic+Border');
+    background-image: url('https://placehold.co/200x20/222/444');
     background-size: auto 100%;
     background-repeat: repeat-x;
     z-index: 2;
