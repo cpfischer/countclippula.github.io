@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Clippula - Where your hair meets its afterlife</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <header>
+        <div class="logo-container">
+            <h1>Count Clippula</h1>
+            <p class="tagline">Where your hair meets its afterlife</p>
+        </div>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Contact Us</h2>
+            <p>We're dying to hear from you!</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>666 Haunted Lane<br>Spookytown, ST 12345</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p><a href="tel:5551234567">(555) 123-4567</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:appointments@countclippula.com">appointments@countclippula.com</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <p>Monday - Friday: 10am - 8pm</p>
+                        <p>Saturday: 9am - 6pm</p>
+                        <p>Sunday: 11am - 5pm</p>
+                    </div>
+                </div>
+                <div class="social-icons contact-social">
+                    <a href="https://www.facebook.com/share/1QbLX1hG3Q/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/countclippula?igsh=c2xmcmNrNHA1N3Ux&utm_source=qr" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@countclippula?_t=ZP-8yuGAQ85V0A&_r=1" aria-label="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h3 id="booking">Book an Appointment</h3>
+                <div class="online-booking-btn">
+                    <a href="https://na1.meevo.com/CustomerPortal/onlinebooking/booking/service?tenantId=11531&locationId=106500&fbclid=PAQ0xDSwMLigdleHRuA2FlbQIxMQABp-SWyWN7zuXlEBybZw3NmqhzdoijT33BHlKd0pM3OzFwfVav1rFTSBTBXalI_aem_0JUKWQpgbjzQF-4Nv05pHw" target="_blank" class="cta-button">
+                        Book an Appointment
+                    </a>
+                    <p class="booking-note">For fastest service, use our online booking system</p>
+                </div>
+                <p class="form-divider"><span>Or fill out the form below</span></p>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="pronouns">Pronouns (optional)</label>
+                        <input type="text" id="pronouns" name="pronouns" placeholder="e.g., they/them, she/her, he/him">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Type</label>
+                        <select id="service" name="service" required aria-required="true">
+                            <option value="">Select a service</option>
+                            <option value="haircut-short">Haircut - Short</option>
+                            <option value="haircut-long">Haircut - Long</option>
+                            <option value="color">Color Service</option>
+                            <option value="color-correction">Color Correction</option>
+                            <option value="styling">Styling</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="stylist">Preferred Stylist (Optional)</label>
+                        <select id="stylist" name="stylist">
+                            <option value="">No preference</option>
+                            <option value="vlad">Vlad</option>
+                            <option value="luna">Luna</option>
+                            <option value="raven">Raven</option>
+                            <option value="ash">Ash</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <select id="time" name="time" required aria-required="true">
+                            <option value="">Select a time</option>
+                            <option value="morning">Morning (10am - 12pm)</option>
+                            <option value="early-afternoon">Early Afternoon (12pm - 3pm)</option>
+                            <option value="late-afternoon">Late Afternoon (3pm - 6pm)</option>
+                            <option value="evening">Evening (6pm - 8pm)</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your hair goals, concerns, or any accessibility needs"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit" class="submit-button">Book Appointment</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Count Clippula</h3>
+                <p>Where your hair meets its afterlife</p>
+                <p>A hair salon where everyone is welcome and style is eternal.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 10am - 8pm</p>
+                <p>Saturday: 9am - 6pm</p>
+                <p>Sunday: 11am - 5pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1QbLX1hG3Q/?mibextid=wwXIfr" aria-label="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/countclippula?igsh=c2xmcmNrNHA1N3Ux&utm_source=qr" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@countclippula?_t=ZP-8yuGAQ85V0A&_r=1" aria-label="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Count Clippula. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
